@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "27213f71-7111-4682-bdf3-bc2abda44368",
+		"name": "ApisCognitivas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43472300",
+		"_collection_link": "https://vgayudantia.postman.co/workspace/fe2b0d57-d1ff-45a0-aa63-687ae69256ad/collection/43472300-27213f71-7111-4682-bdf3-bc2abda44368?action=share&source=collection_link&creator=43472300"
+	},
+	"item": [
+		{
+			"name": "Scraper",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cognitive/summary?url=https://es.wikipedia.org/wiki/Akira_Toriyama",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cognitive",
+						"summary"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://es.wikipedia.org/wiki/Akira_Toriyama"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cognitive/generate-image?prompt=A futuristic city at night with flying cars and neon lights&styleId=3&size=1-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cognitive",
+						"generate-image"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "A futuristic city at night with flying cars and neon lights"
+						},
+						{
+							"key": "styleId",
+							"value": "3"
+						},
+						{
+							"key": "size",
+							"value": "1-1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
